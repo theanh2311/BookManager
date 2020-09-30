@@ -23,12 +23,6 @@
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/btn_sua_theLoai"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sửa" />
-
-        <Button
             android:id="@+id/btn_xoa_theLoai"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -3,25 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".model.DetailTheLoaiActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <EditText
-        android:id="@+id/edtMaTL"
-        android:layout_width="383dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="236dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Mã Thể Loại"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/edtTenTL"
@@ -29,15 +13,16 @@
         android:layout_height="42dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="73dp"
         android:layout_marginEnd="14dp"
         android:layout_marginRight="14dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Tên Thể Loại"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtMaTL" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
 
     <EditText
         android:id="@+id/edt_MoTaTL"
@@ -81,6 +66,7 @@
         android:layout_marginEnd="260dp"
         android:layout_marginRight="260dp"
         android:text="Ok"
+        android:onClick="updateTL"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_ViTriTL" />
@@ -96,6 +82,7 @@
         android:layout_marginRight="93dp"
         android:layout_marginBottom="364dp"
         android:text="Cancel"
+        android:onClick="Huy"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

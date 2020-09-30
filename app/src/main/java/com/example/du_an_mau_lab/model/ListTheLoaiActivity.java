@@ -3,30 +3,21 @@ package com.example.du_an_mau_lab.model;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.du_an_mau_lab.DAO.NguoiDungDao;
 import com.example.du_an_mau_lab.DAO.TheLoaiDao;
 import com.example.du_an_mau_lab.R;
 import com.example.du_an_mau_lab.TheLoaiActivity;
-import com.example.du_an_mau_lab.adapter.NguoiDungAdapter;
 import com.example.du_an_mau_lab.adapter.TheLoaiAdapter;
-
 import java.util.ArrayList;
 import java.util.List;
-
 public class ListTheLoaiActivity extends AppCompatActivity {
     public static List<TheLoai> lsTL =new ArrayList<>();
     ListView lvTheLoai;
     TheLoaiDao theLoaiDao;
     TheLoaiAdapter theLoaiAdapter;
     ImageView img;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,8 +35,12 @@ public class ListTheLoaiActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
     }
-
+    @Override
+    protected void onResume() {
+        super.onResume();
+        lsTL.clear();//xoa cai cu
+        lsTL= theLoaiDao.getAllTheLoai();
+        theLoaiAdapter.changeDataset(lsTL);
+    }
 }

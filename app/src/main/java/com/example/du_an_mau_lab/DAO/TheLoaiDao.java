@@ -61,6 +61,19 @@ public class TheLoaiDao {
         }
         return 1;
     }
+
+    public  int updateTL(TheLoai t){
+        ContentValues values = new ContentValues();
+        values.put("maTL",t.getMaTL());
+        values.put("tenTL",t.getTenTL());
+        values.put("moTa",t.getMoTa());
+        values.put("vitri",t.getViTri());
+        int kq = db.update(TABLE_NAME,values,"maTL=?",new String[]{t.getMaTL()});
+        if (kq==0){
+            return  -1;
+        }
+        return 1;
+    }
     public int deleteTL(String maTL){
         int kq = db.delete(TABLE_NAME,"maTL=?",new String[]{maTL});
         if (kq==0){
@@ -68,4 +81,6 @@ public class TheLoaiDao {
         }
         return  1;//xoa thanh cong
     }
+
+
 }
