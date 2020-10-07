@@ -10,11 +10,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.du_an_mau_lab.DAO.NguoiDungDao;
 import com.example.du_an_mau_lab.DAO.TheLoaiDao;
-import com.example.du_an_mau_lab.model.ListNguoiDungActivity;
 import com.example.du_an_mau_lab.model.ListTheLoaiActivity;
-import com.example.du_an_mau_lab.model.NguoiDung;
 import com.example.du_an_mau_lab.model.TheLoai;
 
 public class TheLoaiActivity extends AppCompatActivity {
@@ -25,11 +22,11 @@ public class TheLoaiActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_theloai_them);
-        btnAddTL = findViewById(R.id.btn_addTL);
-        edtMaTL = findViewById(R.id.edtMaTL);
-        edtTenTL = findViewById(R.id.edtTenTL);
-        edtMoTaTL = findViewById(R.id.edt_MoTaTL);
-        edtViTriTL = findViewById(R.id.edt_ViTriTL);
+        btnAddTL = findViewById(R.id.btn_OK);
+        edtMaTL = findViewById(R.id.edtMaSach);
+        edtTenTL = findViewById(R.id.edtMaTL);
+        edtMoTaTL = findViewById(R.id.edt_TieuDe);
+        edtViTriTL = findViewById(R.id.edt_TacGia);
     }
     public void addTL(View view){
         theLoaiDao = new TheLoaiDao(TheLoaiActivity.this);
@@ -49,7 +46,7 @@ public class TheLoaiActivity extends AppCompatActivity {
     }
     public void cancelAddTL(View view){
         Button btn;
-        btn= findViewById(R.id.btn_Cancel_AddTL);
+        btn= findViewById(R.id.btn_Cancel_AddSach);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

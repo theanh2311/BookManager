@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/edtMaTL"
+        android:id="@+id/edtMaSach"
         android:layout_width="383dp"
         android:layout_height="44dp"
         android:layout_marginStart="16dp"
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 
     <EditText
-        android:id="@+id/edtTenTL"
+        android:id="@+id/edtMaTL"
         android:layout_width="381dp"
         android:layout_height="42dp"
         android:layout_marginStart="16dp"
@@ -37,10 +37,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtMaTL" />
+        app:layout_constraintTop_toBottomOf="@+id/edtMaSach" />
 
     <EditText
-        android:id="@+id/edt_MoTaTL"
+        android:id="@+id/edt_TieuDe"
         android:layout_width="380dp"
         android:layout_height="53dp"
         android:layout_marginStart="16dp"
@@ -53,10 +53,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtTenTL" />
+        app:layout_constraintTop_toBottomOf="@+id/edtMaTL" />
 
     <EditText
-        android:id="@+id/edt_ViTriTL"
+        android:id="@+id/edt_TacGia"
         android:layout_width="383dp"
         android:layout_height="47dp"
         android:layout_marginStart="16dp"
@@ -69,10 +69,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_MoTaTL" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_TieuDe" />
 
     <Button
-        android:id="@+id/btn_addTL"
+        android:id="@+id/btn_OK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="63dp"
@@ -84,10 +84,10 @@
         android:onClick="addTL"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_ViTriTL" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_TacGia" />
 
     <Button
-        android:id="@+id/btn_Cancel_AddTL"
+        android:id="@+id/btn_Cancel_AddSach"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="79dp"
@@ -101,8 +101,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/btn_addTL"
-        app:layout_constraintTop_toBottomOf="@+id/edt_ViTriTL"
+        app:layout_constraintStart_toEndOf="@+id/btn_OK"
+        app:layout_constraintTop_toBottomOf="@+id/edt_TacGia"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView

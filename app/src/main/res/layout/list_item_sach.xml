@@ -14,17 +14,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
-            android:layout_width="234dp"
-            android:layout_height="50dp"
-            android:hint="Sách 1" />
-
+        <TextView
+            android:id="@+id/tvTieuDe"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:hint="Tiêu Đề"
+            android:textSize="24sp" />
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sửa" />
-
-        <Button
+            android:id="@+id/btnDeleteSach"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Xóa" />

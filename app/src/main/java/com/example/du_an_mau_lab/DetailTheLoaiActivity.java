@@ -10,8 +10,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.du_an_mau_lab.DAO.TheLoaiDao;
-import com.example.du_an_mau_lab.DetailNguoiDungActivity;
-import com.example.du_an_mau_lab.R;
 import com.example.du_an_mau_lab.model.ListTheLoaiActivity;
 import com.example.du_an_mau_lab.model.TheLoai;
 
@@ -27,11 +25,11 @@ public class DetailTheLoaiActivity extends AppCompatActivity {
         setTitle("Sửa Thể Loại");
         setContentView(R.layout.activity_theloai_sua);
         theLoaiDao = new TheLoaiDao(DetailTheLoaiActivity.this);
-        edtTenTL = findViewById(R.id.edtTenTL);
-        edtMoTa = findViewById(R.id.edt_MoTaTL);
-        edtViTri = findViewById(R.id.edt_ViTriTL);
-        btnCancel = findViewById(R.id.btn_Cancel_AddTL);
-        btnOK = findViewById(R.id.btn_addTL);
+        edtTenTL = findViewById(R.id.edtMaTL);
+        edtMoTa = findViewById(R.id.edt_TieuDe);
+        edtViTri = findViewById(R.id.edt_TacGia);
+        btnCancel = findViewById(R.id.btn_Cancel_AddSach);
+        btnOK = findViewById(R.id.btn_OK);
         Intent intent = getIntent();
         Bundle b = intent.getExtras();
         maTL = b.getString("maTL");

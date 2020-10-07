@@ -1,6 +1,8 @@
 package com.example.du_an_mau_lab;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.du_an_mau_lab.model.ListSachActivity;
 import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
 
@@ -22,7 +24,7 @@ import java.security.NoSuchAlgorithmException;
 import java.security.Signature;
 
 public class MainActivity extends AppCompatActivity {
-    ImageView imgNguoiDung, imgTheLoai;
+    ImageView imgNguoiDung, imgTheLoai,imgSach;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +46,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        imgSach = findViewById(R.id.imgSach);
+        imgSach.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ListSachActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
