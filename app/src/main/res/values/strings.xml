@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Du_An_Mau_lab</string>
+    <string name="facebook_app_id">780881729364412</string> <string name="fb_login_protocol_scheme">fb780881729364412</string>
+
 </resources>
