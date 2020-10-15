@@ -25,9 +25,9 @@ public class DetailTheLoaiActivity extends AppCompatActivity {
         setTitle("Sửa Thể Loại");
         setContentView(R.layout.activity_theloai_sua);
         theLoaiDao = new TheLoaiDao(DetailTheLoaiActivity.this);
-        edtTenTL = findViewById(R.id.edtMaTL);
-        edtMoTa = findViewById(R.id.edt_TieuDe);
-        edtViTri = findViewById(R.id.edt_TacGia);
+        edtTenTL = findViewById(R.id.edtTieuDe);
+        edtMoTa = findViewById(R.id.edt_MoTa);
+        edtViTri = findViewById(R.id.edt_Vitri);
         btnCancel = findViewById(R.id.btn_Cancel_AddSach);
         btnOK = findViewById(R.id.btn_OK);
         Intent intent = getIntent();

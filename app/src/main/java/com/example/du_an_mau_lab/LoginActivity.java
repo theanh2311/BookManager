@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
         CallbackManager callbackManager = CallbackManager.Factory.create();
 
 
-        LoginButton loginButton =  findViewById(R.id.login_button);
+        LoginButton loginButton = findViewById(R.id.login_button);
         loginButton.setReadPermissions("email");
         // If using in a fragment
 //        loginButton.setFragment(this);
@@ -60,8 +60,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onSuccess(LoginResult loginResult) {
                 // App code
                 Toast.makeText(LoginActivity.this, "Login thành công", Toast.LENGTH_SHORT).show();
-                Intent intent =  new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(intent);
+
             }
 
             @Override
@@ -76,4 +75,5 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+
 }

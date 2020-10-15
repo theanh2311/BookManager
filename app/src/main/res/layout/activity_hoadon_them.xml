@@ -15,82 +15,60 @@
         android:layout_marginTop="48dp"
         android:layout_marginEnd="118dp"
         android:layout_marginRight="118dp"
-        android:text="Hóa Đơn Chi Tiết"
+        android:text="Hóa Đơn"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText15"
+        android:id="@+id/edtMaHoaDon"
         android:layout_width="406dp"
         android:layout_height="66dp"
         android:layout_marginTop="46dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Mã Hóa Đơn Chi Tiết'"
+        android:hint="Mã Hóa Đơn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
     <EditText
-        android:id="@+id/editText16"
+        android:id="@+id/edtNgayMua"
         android:layout_width="397dp"
         android:layout_height="55dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Mã Sách"
+        android:hint="Ngày Mua"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText15" />
-
-    <EditText
-        android:id="@+id/editText17"
-        android:layout_width="387dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="38dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Mã Hóa Đơn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText16" />
-
-    <EditText
-        android:id="@+id/editText18"
-        android:layout_width="373dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="26dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Số Lượng"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText17" />
+        app:layout_constraintTop_toBottomOf="@+id/edtMaHoaDon" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/btn_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="73dp"
-        android:layout_marginLeft="73dp"
-        android:layout_marginTop="54dp"
-        android:text="Sửa"
+        android:layout_marginStart="82dp"
+        android:layout_marginLeft="82dp"
+        android:layout_marginTop="72dp"
+        android:onClick="addHD"
+        android:text="Thêm"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText18" />
+        app:layout_constraintTop_toBottomOf="@+id/edtNgayMua" />
 
     <Button
-        android:id="@+id/button16"
+        android:onClick="cancelAddHD"
+        android:id="@+id/btn_cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="95dp"
-        android:layout_marginLeft="95dp"
-        android:layout_marginTop="55dp"
-        android:layout_marginEnd="67dp"
-        android:layout_marginRight="67dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginRight="107dp"
         android:text="Hủy"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button15"
-        app:layout_constraintTop_toBottomOf="@+id/editText18" />
+        app:layout_constraintStart_toEndOf="@+id/btn_add"
+        app:layout_constraintTop_toBottomOf="@+id/edtNgayMua" />
 </androidx.constraintlayout.widget.ConstraintLayout>

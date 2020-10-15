@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
+import com.example.du_an_mau_lab.DAO.HoaDonDao;
 import com.example.du_an_mau_lab.DAO.NguoiDungDao;
 import com.example.du_an_mau_lab.DAO.SachDao;
 import com.example.du_an_mau_lab.DAO.TheLoaiDao;
@@ -26,6 +27,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
          db.execSQL(NguoiDungDao.SQL_NGUOI_DUNG);
          db.execSQL(TheLoaiDao.SQL_THE_LOAI);
         db.execSQL(SachDao.SQL_SACH);
+        db.execSQL(HoaDonDao.SQL_HOA_DON);
     //    db.execSQL("");
     }
 //upgrade bang
@@ -34,6 +36,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             db.execSQL("DROP TABLE IF EXISTS "+ NguoiDungDao.TABLE_NAME);
         db.execSQL("DROP TABLE IF EXISTS "+ TheLoaiDao.TABLE_NAME);
         db.execSQL("DROP TABLE IF EXISTS "+ SachDao.TABLE_NAME);
+        db.execSQL("DROP TABLE IF EXISTS "+ HoaDonDao.TABLE_NAME);
         db.execSQL("");
     }
 }

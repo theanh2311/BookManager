@@ -13,15 +13,32 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-        <EditText
-            android:layout_width="326dp"
-            android:layout_height="match_parent"
-            android:hint="Hóa Đơn 1" />
+    <TextView
+        android:id="@+id/tv_MaHoaDon"
+        android:layout_width="326dp"
+        android:layout_height="match_parent"
+        android:text="Mã Hóa Đơn"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_NgayMua"
+        android:layout_width="326dp"
+        android:layout_height="match_parent"
+        android:text="Ngày Mua"
+        android:textSize="24sp" />
+</LinearLayout>
+
         <Button
+            android:id="@+id/btn_deleteHoaDon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Chi Tiết" />
+            android:layout_marginTop="13dp"
+            android:text="Xóa" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
