@@ -72,7 +72,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imgTheLoai" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/img_HDCT"
         android:layout_width="111dp"
         android:layout_height="107dp"
         android:layout_marginStart="57dp"
@@ -91,13 +91,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="58dp"
         android:layout_marginLeft="58dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="33dp"
         android:layout_marginEnd="114dp"
         android:layout_marginRight="114dp"
-        android:text="Sách  Bán Chạy"
+        android:text="Hóa Đơn Chi Tiết"
         app:layout_constraintEnd_toStartOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/img_HDCT" />
 
     <ImageView
         android:id="@+id/imgHoaDon"
@@ -127,7 +127,7 @@
         android:layout_height="100dp"
         android:layout_marginStart="58dp"
         android:layout_marginLeft="58dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="47dp"
         android:layout_marginEnd="51dp"
         android:layout_marginRight="51dp"
         app:layout_constraintEnd_toStartOf="@+id/imageView7"

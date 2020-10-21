@@ -20,14 +20,14 @@
 
     <TextView
         android:id="@+id/tv_MaHoaDon"
-        android:layout_width="326dp"
+        android:layout_width="350dp"
         android:layout_height="match_parent"
         android:text="Mã Hóa Đơn"
         android:textSize="24sp" />
 
     <TextView
         android:id="@+id/tv_NgayMua"
-        android:layout_width="326dp"
+        android:layout_width="350dp"
         android:layout_height="match_parent"
         android:text="Ngày Mua"
         android:textSize="24sp" />

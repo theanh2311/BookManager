@@ -59,6 +59,9 @@
         <activity android:name=".LoginActivity">
 
         </activity>
+        <activity android:name=".model.ListHDCTActivity"/>
+        <activity android:name=".HDCTActivity"/>
+        <activity android:name=".DetailHDCTActivity"/>
 
     </application>
 
