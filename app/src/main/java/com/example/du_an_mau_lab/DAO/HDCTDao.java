@@ -20,8 +20,8 @@ public class HDCTDao {
     private SQLiteOpenHelper dbhelper;
     public  static final String TAG = "TAG_HDCT";
     public  static  final String TABLE_NAME = "HDCT";
-    public static  final String SQL_HOA_DON = "CREATE TABLE HDCT (" +
-            " maHDCT text primary key autoincrement," +
+    public static  final String SQL_HDCT = "CREATE TABLE HDCT (" +
+            " maHDCT integer primary key autoincrement," +
             "maHoaDOn text,"+
             "maSanPham text,"+
             "soLuong text );";
