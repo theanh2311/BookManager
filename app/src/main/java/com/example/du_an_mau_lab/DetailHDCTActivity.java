@@ -46,6 +46,7 @@ public class DetailHDCTActivity extends AppCompatActivity {
         edtMaSanPham.setText(maSanPham);
         edtMaHoaDon.setText(maHoaDon);
        // Log.e("MSG"," "+maHDCT);
+        hdctDao = new HDCTDao(this);
     }
     public void updateHDCT(View view){
         HDCT hdct= new HDCT();

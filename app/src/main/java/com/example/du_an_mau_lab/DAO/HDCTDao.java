@@ -2,6 +2,7 @@ package com.example.du_an_mau_lab.DAO;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -46,6 +47,7 @@ public class HDCTDao {
         c.close();
         return lsHDCT;
     }
+
     public  int insertHDCT(HDCT hdct){
         ContentValues values = new ContentValues();
         values.put("maHoaDon",hdct.getMaHoaDon());
@@ -82,4 +84,5 @@ public class HDCTDao {
         }
         return  1;//xoa thanh cong
     }
+
 }

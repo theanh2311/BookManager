@@ -12,7 +12,6 @@ import android.widget.TextView;
 
 import com.example.du_an_mau_lab.DAO.HoaDonDao;
 
-import com.example.du_an_mau_lab.DAO.TheLoaiDao;
 import com.example.du_an_mau_lab.DetailHoaDonActivity;
 import com.example.du_an_mau_lab.R;
 import com.example.du_an_mau_lab.model.HoaDon;
@@ -76,6 +75,8 @@ public class HoaDonAdapter extends BaseAdapter {
                     hoaDonDao.deleteHD(hd.getMaHoaDon());//xoa trong database
                 }
             });
+
+
             //tao template tu view
             convertView.setTag(holder);
         }else {
